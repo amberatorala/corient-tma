@@ -73,8 +73,9 @@
   }
 
   .section-title {
-    font-family: var(--sans); font-size: 38px; font-weight: 500;
+    font-family: var(--sans); font-size: clamp(26px, 4vw, 38px); font-weight: 500;
     letter-spacing: -0.025em; line-height: 1.15; color: var(--white); margin-bottom: 32px;
+    overflow-wrap: break-word;
   }
 
   .section-subtitle {
@@ -182,7 +183,7 @@
   }
 
   .stat-callout p {
-    font-family: var(--sans); font-size: 24px; font-weight: 500;
+    font-family: var(--sans); font-size: clamp(18px, 3vw, 24px); font-weight: 500;
     color: var(--white); letter-spacing: -0.015em;
   }
 
@@ -244,7 +245,7 @@
   }
 
   .compare-anchor p {
-    font-family: var(--sans); font-size: 22px; font-weight: 400;
+    font-family: var(--sans); font-size: clamp(18px, 2.5vw, 22px); font-weight: 400;
     color: var(--white); letter-spacing: -0.01em;
     max-width: 600px; margin: 0 auto;
   }
@@ -266,7 +267,7 @@
   .bundle-price-block {}
 
   .bundle-price {
-    font-family: var(--sans); font-size: 48px; font-weight: 600;
+    font-family: var(--sans); font-size: clamp(32px, 5vw, 48px); font-weight: 600;
     letter-spacing: -0.03em; color: var(--white); line-height: 1;
   }
 
@@ -434,9 +435,10 @@
   }
 
   .cta-title {
-    font-family: var(--sans); font-size: 40px; font-weight: 600;
+    font-family: var(--sans); font-size: clamp(28px, 4vw, 40px); font-weight: 600;
     letter-spacing: -0.03em; line-height: 1.15; color: var(--white);
     margin-bottom: 24px; max-width: 600px; margin-left: auto; margin-right: auto;
+    overflow-wrap: break-word;
   }
 
   .cta-text {
@@ -483,7 +485,7 @@
 
   .footer-brand { display: flex; flex-direction: column; gap: 8px; }
 
-  .footer-brand img { height: 18px; width: auto; opacity: 0.4; display: block; }
+  .footer-brand img { height: 24px; width: auto; opacity: 0.4; }
 
   .footer-tagline {
     font-size: 13px; font-weight: 300; color: var(--light);
